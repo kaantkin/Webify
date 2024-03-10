@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Elements sidebar which contains all the draggable elements */
+.elements-ctr {
+    height: 100%;
+    width: 150px;
+    background-color: wheat;
+}
+/* The actual elements which the user can drag from sidebar */
+.element-selector {
+    width: 40px;
+    height: 40px;
+    border: 1px dashed tomato;
+}
+
+/* Hide style container - this exists so when user exports site it does so with the styles! */
+.style-ctr {
+    display: none;
+}
+
+/* Where user-created site is displayed */
+.site-canvas {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: #FFFF;
+}
+
+/* For all the generated elements */
+
+.gen-section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.gen-cell {
+    min-height: 75px;
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+.gen-outlines {
+    outline: 1px dashed black;
+    outline-offset: -2px;
+}
+
+.element-hover-highlight-top {
+    box-shadow: 0 -1px 0 #000;
+}

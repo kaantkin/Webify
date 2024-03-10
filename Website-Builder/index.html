@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Builder</title>
+        <link href="index.css" rel="stylesheet">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <div class="elements-ctr">
+                <div id="selector-c1" class="element-selector" draggable="true" ondragstart="drag(event)">
+                    1 Col
+                </div>
+
+                <div id="selector-c2" class="element-selector" draggable="true" ondragstart="drag(event)">
+                    2 Cols
+                </div>
+
+                <div id="selector-c3" class="element-selector" draggable="true" ondragstart="drag(event)">
+                    3 Cols
+                </div>
+
+                <div id="selector-c2_3/7" class="element-selector" draggable="true" ondragstart="drag(event)">
+                    2 Cols 3/7
+                </div>
+
+            </div>
+            <div class="site-canvas" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id="style-ctr"></div>
+            </div>
+        </div>
+    </body>
+</html>
